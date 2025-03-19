@@ -9,4 +9,21 @@ RSpec.describe GoGemYieldWithinGoroutine do
 
     it { should eq 3 }
   end
+
+  describe ".with_block" do
+    context "with block" do
+      it "works" do
+        actual =
+          GoGemYieldWithinGoroutine.with_block(2) do |a|
+            a * 3
+          end
+
+        expect(actual).to eq 6
+      end
+    end
+
+    context "without block" do
+      it { expect { GoGemYieldWithinGoroutine.with_block(2) }.to raise_error ArgumentError }
+    end
+  end
 end
