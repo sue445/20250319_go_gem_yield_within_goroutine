@@ -1,11 +1,12 @@
 # frozen_string_literal: true
 
 RSpec.describe GoGemYieldWithinGoroutine do
-  it "has a version number" do
-    expect(GoGemYieldWithinGoroutine::VERSION).not_to be nil
-  end
+  describe ".sum" do
+    subject { GoGemYieldWithinGoroutine.sum(a, b) }
 
-  it "does something useful" do
-    expect(false).to eq(true)
+    let(:a) { 1 }
+    let(:b) { 2 }
+
+    it { should eq 3 }
   end
 end
