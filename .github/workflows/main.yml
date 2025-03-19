@@ -29,3 +29,4 @@ jobs:
           go-version-file: ext/go_gem_yield_within_goroutine/go.mod
       - name: Run the default task
         run: bundle exec rake
+        timeout-minutes: 1
