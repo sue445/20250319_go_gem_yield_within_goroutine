@@ -8,4 +8,4 @@ require "go_gem/mkmf"
 # selectively, or entirely remove this flag.
 append_cflags("-fvisibility=hidden")
 
-create_go_makefile("go_gem_yield_within_goroutine/go_gem_yield_within_goroutine")
+create_go_makefile("go_gem_yield_within_goroutine/go_gem_yield_within_goroutine", go_build_args: "-gcflags='all=-N -l'")
