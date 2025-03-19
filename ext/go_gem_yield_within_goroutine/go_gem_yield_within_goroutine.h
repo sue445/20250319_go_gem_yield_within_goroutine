@@ -1,0 +1,6 @@
+#ifndef GO_GEM_YIELD_WITHIN_GOROUTINE_H
+#define GO_GEM_YIELD_WITHIN_GOROUTINE_H 1
+
+#include "ruby.h"
+
+#endif /* GO_GEM_YIELD_WITHIN_GOROUTINE_H */
