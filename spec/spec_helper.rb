@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "go_gem_yield_within_goroutine"
+require "timeout"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
